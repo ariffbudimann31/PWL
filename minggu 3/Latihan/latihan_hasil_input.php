@@ -79,9 +79,7 @@ $stat = 'INVALID' ;
 <?php echo$inter;?><br>
 <?php echo$tdtugas;?>
 </td>
-
-</table>
 </tr>
-<tr>
+</table>
 </body>
 </html>
