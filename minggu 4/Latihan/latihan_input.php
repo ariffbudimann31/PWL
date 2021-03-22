@@ -16,6 +16,7 @@ $uas= $_POST['tuas'];
 $khdr= $_POST['khdr'];
 $inter= $_POST['inter'];
 $tdtugas= $_POST['tdtugas'];
+$ctt_khusus= $_POST['ctt_khusus'];
 ?>
 
 <?php
@@ -64,14 +65,17 @@ $stat = '' ;
 else if ($na < 60 )
 {
 $stat = 'TIDAK LULUS' ;
+$katakata = '&#128557 MAAF ANDA TIDAK LULUS &#128557' ;
 }
 else if ($na < 101 )
 {
 $stat = 'LULUS' ;
+$katakata = '&#128526 SELAMAT ANDA TELAH LULUS !!! &#128526' ;
 }
 else
 {
 $stat = 'INVALID' ;
+$katakata = '&#129320 INVALID &#129320' ;
 }
 ?>
 
@@ -107,9 +111,14 @@ default : $ps = "Salah jurusan";
 <td align="center"><?php echo$nh;?></td>
 <td align="center"><?php echo$stat;?></td>
 <td align="center">
-<?php echo$khdr;?><br>
-<?php echo$inter;?><br>
-<?php echo$tdtugas;?>
+  <?php
+    if (isset($_POST['ctt_khusus'])) {
+        $ctt_khusus=$_POST['ctt_khusus'];
+        for ($i=0; $i < count($ctt_khusus) ; $i++){
+            echo $ctt_khusus[$i]."<br>";
+        }
+    }
+  ?>
 </td>
 </tr>
 </table>
@@ -117,9 +126,22 @@ default : $ps = "Salah jurusan";
 <table align="center" border="2">
 <tr>
 <td>
-<a href="latihan_form_input.php"><b>BACK</b></a>
+<a href="latihan_form_input.php" style="text-decoration:none"><b>BACK</b></a>
 </td>
 </tr>
 </table>
+<br>
+<br>
+<table align="center" border="0">
+<tr>
+<td>
+<?php
+echo $katakata;
+?>
+</td>
+</tr>
+</table>
+
+
 </body>
 </html>

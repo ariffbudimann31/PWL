@@ -25,9 +25,9 @@
 <tr>
 <td> Catatan Khusus</td>
 <td>
-<input type="checkbox" name="khdr" value="Kehadiran >=70% "> Kehadiran >= 70%<br>
-<input type="checkbox" name="inter" value="Interaktif Dikelas"> Interaktif Dikelas<br>
-<input type="checkbox" name="tdtugas" value="Tidak Terlambat Mengumpulkan Tugas"> Tidak Terlambat Mengumpulkan Tugas
+<input type="checkbox" name="ctt_khusus[]" value="Kehadiran >=70% "> Kehadiran >= 70%<br>
+<input type="checkbox" name="ctt_khusus[]" value="Interaktif Dikelas"> Interaktif Dikelas<br>
+<input type="checkbox" name="ctt_khusus[]" value="Tidak Terlambat Mengumpulkan Tugas"> Tidak Terlambat Mengumpulkan Tugas
 </td>
 </tr>
 <tr>
@@ -38,6 +38,5 @@
 </tr>
 </form>
 </table>
-</body>
 </body>
 </html>
