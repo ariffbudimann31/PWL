@@ -1,0 +1,13 @@
+Langkah awal
+
+Cari folder XAMPP/Tergantung aplikasi yang dipakai masing masing -> htdocs -> nama folder yang dipakai untuk menyimpan repository.
+
+1. C:\xampp\htdocs\web2>git init (untuk mengatur folder aktif)
+
+2. C:\xampp\htdocs\web2>git add . (untuk menambahkan semua folder di folder aktif)
+
+3. C:\xampp\htdocs\web2>git status (untuk melihat status folder)
+
+4. C:\xampp\htdocs\web2>git commit -m "terserah mau ditulis apa" (untuk mengupload data dari local ke github)
+
+5. C:\xampp\htdocs\web2>git push origin "nama branch di website kalian" (untuk mengupload file data ke branch github)
