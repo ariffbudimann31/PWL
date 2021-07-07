@@ -7,10 +7,9 @@
 </tbody>
 <?php
 foreach ($books as $book) {
-echo '<tr><td><a href="index.php?book=' .$book->title .
+echo '<tr><td><a href="index.php?book=' .$book->title . 
 '">' . $book->title .
-'</a></td><td>' .$book->author . '</td><td>' . $book-
->description . '</td></tr>';
+'</a></td><td>' .$book->author . '</td><td>' . $book->description . '</td></tr>';
 }
 ?>
 </table>

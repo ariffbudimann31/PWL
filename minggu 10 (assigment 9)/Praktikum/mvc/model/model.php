@@ -1,16 +1,16 @@
 <?php
-include_once("model/Book.php");
+include_once("model/book.php");
 class Model {
 public function getBookList(){
-// here goes some hardcoded values to simulate the
-database
-return array(
-"Jungle Book" => new Book("Jungle Book", "R. Kipling",
+// here goes some hardcoded values to simulate the 
+return array (
+"Jungle Book" => new Book("Jungle Book", "R. Kipling", 
 "A classic book."),
-"Moonwalker" => new Book("Moonwalker", "J. Walker",
-""),
-"PHP for Dummies" => new Book("PHP for Dummies", "Some
-Smart Guy", "")
+"PHP for Dummies" => new Book("PHP for Dummies", "Some 
+Smart Guy", ""),
+"Moonwalker" => new Book("Moonwalker", "J. Walker", 
+"")
+
 );
 }
 public function getBook($title){
